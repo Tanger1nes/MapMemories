@@ -1,0 +1,564 @@
+.app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.homeContainer {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.appTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.userBtn {
+  padding: 0.3rem 0.8rem;
+  background: #e3f2fd;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1976d2;
+  cursor: pointer;
+}
+
+.loginHeaderBtn {
+  padding: 0.3rem 0.8rem;
+  background: #1DB954;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.addBtn {
+  width: 36px;
+  height: 36px;
+  background: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  background: white;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #1DB954;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tabBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.tabBtnActive {
+  opacity: 1;
+}
+
+.tabIcon {
+  font-size: 1.2rem;
+}
+
+.tabLabel {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.postCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.postCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.postCard:active {
+  transform: scale(0.98);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.postTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.postAddress {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin: 0.2rem 0 0 0;
+}
+
+.postTime {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.postNote {
+  font-size: 0.9rem;
+  color: #495057;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.25rem;
+}
+
+.postAuthor {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.postActions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f3f5;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  color: #6c757d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.detailContainer {
+  padding: 1rem;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.detailCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.detailHeader {
+  margin-bottom: 1rem;
+}
+
+.detailAddress {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.detailNote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.detailAuthor {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid #f1f3f5;
+  border-bottom: 1px solid #f1f3f5;
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.detailActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.detailLikeBtn {
+  flex: 1;
+  padding: 0.6rem;
+  background: #ffebee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.detailShareBtn {
+  flex: 1;
+  padding: 0.6rem;
+  background: #e3f2fd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.commentSection {
+  margin-top: 1rem;
+}
+
+.commentItem {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.commentItem strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #1a1a2e;
+}
+
+.commentItem p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.commentForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.commentInput {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.commentInput:focus {
+  border-color: #1DB954;
+}
+
+.commentSubmit {
+  padding: 0.6rem 1.2rem;
+  background: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.createContainer {
+  padding: 1rem;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.createTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.stepProgress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.stepDot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.stepDotActive {
+  background: #1DB954;
+  opacity: 1;
+  color: white;
+}
+
+.stepDotCompleted {
+  background: #28a745;
+  opacity: 0.7;
+}
+
+.stepContent {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stepDesc {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.mapPlaceholder {
+  height: 200px;
+  background: #e9ecef;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.searchRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchBtn {
+  padding: 0.6rem 1rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.charCount {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.nextBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #1DB954;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: #1DB954;
+}
+
+@media (min-width: 768px) {
+  .app {
+    max-width: 900px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    background: white;
+    margin: 2rem auto;
+    border-radius: 24px;
+    min-height: auto;
+  }
+
+  .homeContainer {
+    padding: 0;
+  }
+
+  .appTitle {
+    font-size: 1.8rem;
+  }
+
+  .searchInput {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+
+  .postsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .postCard {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .postTitle {
+    font-size: 1.2rem;
+  }
+
+  .postNote {
+    font-size: 1rem;
+  }
+
+  .tabsContainer {
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .detailContainer {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .detailCard {
+    padding: 2rem;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    max-width: 1100px;
+    padding: 3rem;
+    margin: 3rem auto;
+  }
+
+  .postsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .postCard {
+    padding: 1.75rem;
+  }
+
+  .postCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
